@@ -14,7 +14,9 @@ SECRET_KEY = 'django-insecure-$@ip)n=073%ywh1%8dwaw+3bhvifmc$w7yoz-qt0p$m!ie=517
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+WSGI_APPLICATION = 'blog.wsgi.application'
+
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
 
 #LOGGING
 LOGGING = {
