@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    {% if user.id == post.author.id %}
+        <h1>Make post public</h1>
+
+        <h3>Public: {{ post.title }}?</h3>
+
+        <!-- form -->
+         <form method="POST">
+            {%  csrf_token %}
+              {{ form.media }}
+            {{ form.as_p }}
+            <strong>You're sure?</strong><br/><br/>
+            <button name="submit_button" class="btn btn-secondary">Public!</button>
+         </form>
+    {% endif %}
+{% else %}
+Login to get access
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'navbar.html' %}
+{% if not post.isPrivate or user == post.author %}
+
+    <!-- Details -->
+    <div class="d-flex flex-column bd-highlight mb-3 gap-1">
+        <h1>{{ post.title }}</h1>
+        <div class="d-flex gap-2">
+                <small>{{ post.author }}</small>
+                <small>·</small>
+                <small>{{ post.post_date }}</small>
+                <small>·</small>
+                <small>3 min read</small>
+        </div>
+        {% if user.is_authenticated %}
+            {% if user.id == post.author.id %}
+
+            <!-- buttons -->
+            <div class="d-flex gap-2 mt-4">
+                <a href="{% url 'update_post' post.pk %}" class="btn btn-primary">Edit post</a>
+                <br/>
+                <a href="{% url 'delete_post' post.pk %}" class="btn btn-danger">Delete post</a>
+            </div>
+
+            {% endif %}
+        {% endif %}
+        <hr>
+        <br/>
+
+
+    <!-- Image, Desc -->
+    <div class="d-flex flex-column gap-1">
+      {% if post.header_image %}
+        <img src="{{ post.header_image.url }}" class="img-fluid" style="pointer-events: none;"/>
+      {% endif %}
+      <p style="word-wrap: break-word; max-width: 100%;">{{ post.body|safe }}</p>
+    </div>
+    <hr>
+        
+    <!--Comments-->
+    <div class="mt-4 mb-4">
+      <h2>Comments...</h2>
+      {% if not post.comments.all %}
+        No Comments Yet...
+        <a href="{% url 'add_comment' post.pk %}"> Add Comment</a>
+      {% else %}
+        <a href="{% url 'add_comment' post.pk %}"> Add Comment</a>
+        <br/>
+        <hr>
+        {% for comment in post.comments.all %}
+          <strong>{{ comment.author }} -</strong>
+          <small>{{ comment.date_added }}</small>
+          <br/>
+          {{ comment.body }}
+          <br><br>
+        {% endfor %}
+      {% endif %}
+    </div>
+  {% endif %}
+    </div>
+
+{% endblock %}

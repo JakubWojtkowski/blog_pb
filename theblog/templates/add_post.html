@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'navbar.html' %}
+{% if user.is_authenticated %}
+    <h1>Add post</h1>
+    <div class="form-group mb-4">
+
+        <!-- form -->
+        <form method="POST" enctype="multipart/form-data">
+            {%  csrf_token %}
+            {{ form.media }}
+            {{ form.as_p }}
+            <button  class="btn btn-secondary">Add</button>
+        </form>
+    </div>
+
+        <script>
+            var name = "{{ user.id }}";
+            document.getElementById("elder").value = name;
+        </script>
+{% else %}
+Login to get access
+
+{% endif %}
+
+
+{% endblock %}

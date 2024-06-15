@@ -1,0 +1,549 @@
+2024-06-09 17:47:12,848 INFO theblog.views Generating context data for HomeView
+2024-06-09 17:47:49,245 INFO theblog.views Generating context data for HomeView
+2024-06-09 17:47:53,197 INFO theblog.views Fetching posts for category: sport
+2024-06-09 17:48:01,572 INFO theblog.views Generating context data for HomeView
+2024-06-09 17:48:09,173 INFO theblog.views Fetching details for post ID: 22
+2024-06-09 17:48:13,200 INFO theblog.views Fetching details for post ID: 17
+2024-06-09 17:48:17,695 INFO theblog.views Fetching details for post ID: 1
+2024-06-09 17:48:33,357 INFO theblog.views Generating context data for HomeView
+2024-06-09 17:48:42,872 INFO theblog.views Fetching details for post ID: 17
+2024-06-09 17:48:48,818 INFO theblog.views Generating context data for HomeView
+2024-06-09 17:56:10,735 INFO theblog.views Generating context data for HomeView
+2024-06-09 17:56:13,927 INFO theblog.views Fetching details for post ID: 22
+2024-06-09 17:56:28,348 INFO theblog.views Fetching posts for category: information
+2024-06-09 17:56:36,163 INFO theblog.views Generating context data for HomeView
+2024-06-09 17:56:36,652 INFO theblog.views Generating context data for HomeView
+2024-06-09 17:56:37,082 INFO theblog.views Generating context data for HomeView
+2024-06-09 18:03:08,549 INFO theblog.views User 1 is generating context data for HomeView
+2024-06-09 18:03:18,625 WARNING django.request Not Found: /accounts/login/
+2024-06-09 18:03:18,626 WARNING django.server "GET /accounts/login/?next=/ HTTP/1.1" 404 4112
+2024-06-09 18:11:24,369 ERROR django.request Internal Server Error: /add_post/
+Traceback (most recent call last):
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\Downloads\blog-rswtaw\blog-rswtaw-main\theblog\views.py", line 41, in form_valid
+    logger.info(f'User {self.request.user.id} added a new post with title: {form.instance.title}')
+    ^^^^^^
+NameError: name 'logger' is not defined
+2024-06-09 18:11:24,372 ERROR django.server "POST /add_post/ HTTP/1.1" 500 91950
+2024-06-09 18:16:32,302 INFO theblog.views User 1 added a new post with title: fdgfdgfd
+2024-06-09 18:23:26,638 INFO theblog.views User 1 added a new post with title: yukjykyu
+2024-06-09 18:23:44,591 INFO theblog.views User 1 updated post ID: 25
+2024-06-09 18:24:58,420 INFO theblog.views User 1 added a new post with title: fhgggg
+2024-06-09 18:29:08,531 INFO theblog.views User 1 added a new post with title: fewfwefew
+2024-06-09 18:29:16,827 INFO theblog.views User 1 updated post ID: 27
+2024-06-09 18:32:56,461 INFO theblog.views User id: 1 added a new post with title: asdasdsadsa and post ID: None
+2024-06-09 18:33:09,735 INFO theblog.views User 1 updated post ID: 28
+2024-06-09 18:33:26,996 INFO theblog.views User 1 confirmed deletion of post ID: 28
+2024-06-09 18:33:49,567 INFO theblog.views User id: 1 added a new post with title: sadasdsa and post ID: None
+2024-06-09 18:33:55,678 INFO theblog.views User 1 confirmed deletion of post ID: 29
+2024-06-09 18:35:33,358 INFO theblog.views User id: 1 added a new post with title: fsddsfsdfs and post ID: 30
+2024-06-09 18:35:33,390 ERROR django.request Internal Server Error: /add_post/
+Traceback (most recent call last):
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kamil\Downloads\blog-rswtaw\blog-rswtaw-main\theblog\views.py", line 48, in form_valid
+    return redirect(self.get_success_url())
+           ^^^^^^^^
+NameError: name 'redirect' is not defined
+2024-06-09 18:35:33,393 ERROR django.server "POST /add_post/ HTTP/1.1" 500 91953
+2024-06-09 18:36:43,241 INFO theblog.views User id: 1 added a new post with title: wasdasdasd and post ID: 31
+2024-06-09 18:36:52,967 INFO theblog.views User id: 1 added a new post with title: safdasfad and post ID: 32
+2024-06-09 18:36:59,996 INFO theblog.views User 1 updated post ID: 31
+2024-06-09 18:37:03,814 INFO theblog.views User 1 confirmed deletion of post ID: 32
+2024-06-09 18:37:34,137 INFO theblog.views User 1 confirmed deletion of post ID: 31
+2024-06-09 18:37:43,741 INFO theblog.views User id: 1 added a new post with title: asdasdasa and post ID: 33
+2024-06-09 18:37:51,866 INFO theblog.views User id: 1 added a new post with title: sfsadfsdftyyyy and post ID: 34
+2024-06-09 18:37:59,764 INFO theblog.views User 1 confirmed deletion of post ID: 33
+2024-06-09 18:38:14,128 INFO theblog.views User id: 1 added a new post with title: sdfsdsaaa and post ID: 35
+2024-06-09 18:38:24,981 INFO theblog.views User 1 updated post ID: 34
+2024-06-09 18:38:51,619 INFO theblog.views User 1 updated post ID: 34
+2024-06-09 18:38:57,089 INFO theblog.views User 1 confirmed deletion of post ID: 34
+2024-06-09 18:39:00,527 INFO theblog.views User 1 confirmed deletion of post ID: 35
+2024-06-09 19:30:54,189 WARNING django.request Not Found: /favicon.ico
+2024-06-09 19:30:54,191 WARNING django.server "GET /favicon.ico HTTP/1.1" 404 4093
+2024-06-09 19:53:22,339 WARNING django.request Not Found: /accounts/login/
+2024-06-09 19:53:22,339 WARNING django.server "GET /accounts/login/?next=/article/30/comment/ HTTP/1.1" 404 4131
+2024-06-09 19:53:36,867 WARNING django.request Not Found: /accounts/login/
+2024-06-09 19:53:36,867 WARNING django.server "GET /accounts/login/?next=/article/22/comment/ HTTP/1.1" 404 4131
+2024-06-09 19:54:47,782 WARNING django.request Not Found: /accounts/login/
+2024-06-09 19:54:47,783 WARNING django.server "GET /accounts/login/?next=/article/20/comment/ HTTP/1.1" 404 4131
+2024-06-09 19:57:35,621 WARNING django.request Not Found: /accounts/login/
+2024-06-09 19:57:35,621 WARNING django.server "GET /accounts/login/?next=/article/20/comment/ HTTP/1.1" 404 4131
+2024-06-09 19:57:51,325 WARNING django.request Not Found: /accounts/login/
+2024-06-09 19:57:51,326 WARNING django.server "GET /accounts/login/?next=/article/20/comment/ HTTP/1.1" 404 4131
+2024-06-09 19:58:45,115 WARNING django.request Not Found: /accounts/login/
+2024-06-09 19:58:45,115 WARNING django.server "GET /accounts/login/?next=/article/20/comment/ HTTP/1.1" 404 4131
+2024-06-09 20:08:58,012 INFO theblog.views User 1 added a new comment to post ID: 18
+2024-06-09 20:10:34,539 INFO theblog.views User 1 added a new comment to post ID: 18
+2024-06-09 20:10:34,615 ERROR django.request Internal Server Error: /article/18/comment/
+Traceback (most recent call last):
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\theblog\views.py", line 89, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 136, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\theblog\views.py", line 92, in get_success_url
+    return reverse('article_details', kwargs={'pk': self.kwargs['pk']})
+NameError: name 'reverse' is not defined
+2024-06-09 20:10:34,617 ERROR django.server "POST /article/18/comment/ HTTP/1.1" 500 102772
+2024-06-09 20:13:58,070 INFO theblog.views User 1 added a new comment to post ID: 18
+2024-06-09 20:13:58,133 ERROR django.request Internal Server Error: /article/18/comment/
+Traceback (most recent call last):
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\theblog\views.py", line 90, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 136, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\theblog\views.py", line 93, in get_success_url
+    return reverse('article_details', kwargs={'pk': self.kwargs['pk']})
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article_details' not found. 'article_details' is not a valid view function or pattern name.
+2024-06-09 20:13:58,135 ERROR django.server "POST /article/18/comment/ HTTP/1.1" 500 113197
+2024-06-09 20:14:20,267 INFO theblog.views User 1 added a new comment to post ID: 18
+2024-06-09 20:14:20,311 ERROR django.request Internal Server Error: /article/18/comment/
+Traceback (most recent call last):
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\theblog\views.py", line 90, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 136, in form_valid
+    return super().form_valid(form)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\theblog\views.py", line 93, in get_success_url
+    return reverse('article', kwargs={'pk': self.kwargs['pk']})
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+2024-06-09 20:14:20,313 ERROR django.server "POST /article/18/comment/ HTTP/1.1" 500 113061
+2024-06-09 20:16:10,355 INFO theblog.views User 1 added a new comment to post ID: 18
+2024-06-09 20:29:38,407 ERROR django.request Internal Server Error: /article/18/public
+Traceback (most recent call last):
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 204, in get
+    return super().get(request, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 74, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 38, in get_form
+    form_class = self.get_form_class()
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\views\generic\edit.py", line 105, in get_form_class
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Using ModelFormMixin (base class of MakePostPublicView) without the 'fields' attribute is prohibited.
+2024-06-09 20:29:38,410 ERROR django.server "GET /article/18/public HTTP/1.1" 500 99229
+2024-06-09 20:48:48,172 WARNING django.request Not Found: /article/18/public/
+2024-06-09 20:48:48,173 WARNING django.server "POST /article/18/public/ HTTP/1.1" 404 4312
+2024-06-09 20:48:50,816 WARNING django.request Not Found: /article/18/public/
+2024-06-09 20:48:50,817 WARNING django.server "GET /article/18/public/ HTTP/1.1" 404 4311
+2024-06-09 20:48:52,595 WARNING django.request Not Found: /article/18/public/
+2024-06-09 20:48:52,596 WARNING django.server "GET /article/18/public/ HTTP/1.1" 404 4311
+2024-06-09 20:49:01,000 WARNING django.request Not Found: /article/18/public/
+2024-06-09 20:49:01,000 WARNING django.server "GET /article/18/public/ HTTP/1.1" 404 4311
+2024-06-09 20:54:19,741 WARNING django.request Not Found: /article/18/public/
+2024-06-09 20:54:19,741 WARNING django.server "POST /article/18/public/ HTTP/1.1" 404 4312
+2024-06-09 20:54:22,771 WARNING django.request Not Found: /article/18/public/
+2024-06-09 20:54:22,772 WARNING django.server "GET /article/18/public/ HTTP/1.1" 404 4311
+2024-06-09 21:05:52,674 INFO theblog.views User 1 made post ID: 18 public
+2024-06-09 21:06:01,374 INFO theblog.views User 1 updated post ID: 18
+2024-06-09 21:06:10,238 INFO theblog.views User 1 updated post ID: 18
+2024-06-09 21:07:38,623 ERROR django.request Internal Server Error: /article/18/
+Traceback (most recent call last):
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'public_post' not found. 'public_post' is not a valid view function or pattern name.
+2024-06-09 21:07:38,628 ERROR django.server "GET /article/18/ HTTP/1.1" 500 217175
+2024-06-09 21:07:39,698 ERROR django.request Internal Server Error: /article/18/
+Traceback (most recent call last):
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'public_post' not found. 'public_post' is not a valid view function or pattern name.
+2024-06-09 21:07:39,701 ERROR django.server "GET /article/18/ HTTP/1.1" 500 217175
+2024-06-09 21:07:41,749 ERROR django.request Internal Server Error: /article/18/
+Traceback (most recent call last):
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\jw200\OneDrive\Pulpit\blog-rswtaw-master\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'public_post' not found. 'public_post' is not a valid view function or pattern name.
+2024-06-09 21:07:41,751 ERROR django.server "GET /article/18/ HTTP/1.1" 500 217038
+2024-06-09 21:08:23,813 INFO theblog.views User 1 updated post ID: 18
+2024-06-09 21:08:32,536 INFO theblog.views User 1 updated post ID: 18
+2024-06-09 21:10:12,222 WARNING django.request Not Found: /accounts/login/
+2024-06-09 21:10:12,222 WARNING django.server "GET /accounts/login/?next=/article/30/comment/ HTTP/1.1" 404 4328
+2024-06-09 21:10:21,017 WARNING django.request Not Found: /accounts/login/
+2024-06-09 21:10:21,018 WARNING django.server "GET /accounts/login/?next=/article/22/comment/ HTTP/1.1" 404 4328
+2024-06-09 21:10:39,188 INFO theblog.views User 1 added a new comment to post ID: 30
+2024-06-09 21:11:30,308 WARNING django.request Not Found: /accounts/login/
+2024-06-09 21:11:30,308 WARNING django.server "GET /accounts/login/?next=/article/30/comment/ HTTP/1.1" 404 4328
+2024-06-09 21:11:33,519 WARNING django.request Not Found: /accounts/login/
+2024-06-09 21:11:33,520 WARNING django.server "GET /accounts/login/?next=/article/30/comment/ HTTP/1.1" 404 4328
+2024-06-09 21:12:08,417 WARNING django.request Not Found: /accounts/login/
+2024-06-09 21:12:08,418 WARNING django.server "GET /accounts/login/?next=/article/30/comment/ HTTP/1.1" 404 4328
+2024-06-09 21:13:06,430 DEBUG PIL.TiffImagePlugin tag: Copyright (33432) - type: string (2) Tag Location: 22 - Data Location: 26 - value: <table: 39 bytes>
+2024-06-09 21:13:06,430 DEBUG PIL.Image Importing BlpImagePlugin
+2024-06-09 21:13:06,431 DEBUG PIL.Image Importing BmpImagePlugin
+2024-06-09 21:13:06,431 DEBUG PIL.Image Importing BufrStubImagePlugin
+2024-06-09 21:13:06,432 DEBUG PIL.Image Importing CurImagePlugin
+2024-06-09 21:13:06,432 DEBUG PIL.Image Importing DcxImagePlugin
+2024-06-09 21:13:06,434 DEBUG PIL.Image Importing DdsImagePlugin
+2024-06-09 21:13:06,437 DEBUG PIL.Image Importing EpsImagePlugin
+2024-06-09 21:13:06,439 DEBUG PIL.Image Importing FitsImagePlugin
+2024-06-09 21:13:06,440 DEBUG PIL.Image Importing FliImagePlugin
+2024-06-09 21:13:06,442 DEBUG PIL.Image Importing FpxImagePlugin
+2024-06-09 21:13:06,444 DEBUG PIL.Image Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-06-09 21:13:06,444 DEBUG PIL.Image Importing FtexImagePlugin
+2024-06-09 21:13:06,444 DEBUG PIL.Image Importing GbrImagePlugin
+2024-06-09 21:13:06,445 DEBUG PIL.Image Importing GifImagePlugin
+2024-06-09 21:13:06,445 DEBUG PIL.Image Importing GribStubImagePlugin
+2024-06-09 21:13:06,446 DEBUG PIL.Image Importing Hdf5StubImagePlugin
+2024-06-09 21:13:06,447 DEBUG PIL.Image Importing IcnsImagePlugin
+2024-06-09 21:13:06,451 DEBUG PIL.Image Importing IcoImagePlugin
+2024-06-09 21:13:06,452 DEBUG PIL.Image Importing ImImagePlugin
+2024-06-09 21:13:06,454 DEBUG PIL.Image Importing ImtImagePlugin
+2024-06-09 21:13:06,455 DEBUG PIL.Image Importing IptcImagePlugin
+2024-06-09 21:13:06,457 DEBUG PIL.Image Importing JpegImagePlugin
+2024-06-09 21:13:06,457 DEBUG PIL.Image Importing Jpeg2KImagePlugin
+2024-06-09 21:13:06,457 DEBUG PIL.Image Importing McIdasImagePlugin
+2024-06-09 21:13:06,458 DEBUG PIL.Image Importing MicImagePlugin
+2024-06-09 21:13:06,460 DEBUG PIL.Image Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-06-09 21:13:06,460 DEBUG PIL.Image Importing MpegImagePlugin
+2024-06-09 21:13:06,460 DEBUG PIL.Image Importing MpoImagePlugin
+2024-06-09 21:13:06,461 DEBUG PIL.Image Importing MspImagePlugin
+2024-06-09 21:13:06,462 DEBUG PIL.Image Importing PalmImagePlugin
+2024-06-09 21:13:06,465 DEBUG PIL.Image Importing PcdImagePlugin
+2024-06-09 21:13:06,466 DEBUG PIL.Image Importing PcxImagePlugin
+2024-06-09 21:13:06,466 DEBUG PIL.Image Importing PdfImagePlugin
+2024-06-09 21:13:06,472 DEBUG PIL.Image Importing PixarImagePlugin
+2024-06-09 21:13:06,474 DEBUG PIL.Image Importing PngImagePlugin
+2024-06-09 21:13:06,474 DEBUG PIL.Image Importing PpmImagePlugin
+2024-06-09 21:13:06,474 DEBUG PIL.Image Importing PsdImagePlugin
+2024-06-09 21:13:06,475 DEBUG PIL.Image Importing QoiImagePlugin
+2024-06-09 21:13:06,476 DEBUG PIL.Image Importing SgiImagePlugin
+2024-06-09 21:13:06,477 DEBUG PIL.Image Importing SpiderImagePlugin
+2024-06-09 21:13:06,478 DEBUG PIL.Image Importing SunImagePlugin
+2024-06-09 21:13:06,479 DEBUG PIL.Image Importing TgaImagePlugin
+2024-06-09 21:13:06,480 DEBUG PIL.Image Importing TiffImagePlugin
+2024-06-09 21:13:06,480 DEBUG PIL.Image Importing WebPImagePlugin
+2024-06-09 21:13:06,501 DEBUG PIL.Image Importing WmfImagePlugin
+2024-06-09 21:13:06,502 DEBUG PIL.Image Importing XbmImagePlugin
+2024-06-09 21:13:06,505 DEBUG PIL.Image Importing XpmImagePlugin
+2024-06-09 21:13:06,507 DEBUG PIL.Image Importing XVThumbImagePlugin
+2024-06-09 21:13:06,515 INFO theblog.views User id: 3 added a new post with title: Drugi mój post and post ID: 36
+2024-06-09 21:13:29,416 INFO theblog.views User 3 added a new comment to post ID: 22
+2024-06-11 19:30:03,658 WARNING django.request Not Found: /favicon.ico
+2024-06-11 19:30:03,659 WARNING django.server "GET /favicon.ico HTTP/1.1" 404 4290
+2024-06-11 19:30:25,103 WARNING django.request Not Found: /accounts/login/
+2024-06-11 19:30:25,103 WARNING django.server "GET /accounts/login/?next=/article/22/comment/ HTTP/1.1" 404 4328
+2024-06-12 17:45:44,032 WARNING django.request Not Found: /favicon.ico
+2024-06-12 17:45:44,033 WARNING django.server "GET /favicon.ico HTTP/1.1" 404 4290
+2024-06-12 17:45:48,380 WARNING django.request Not Found: /accounts/login/
+2024-06-12 17:45:48,381 WARNING django.server "GET /accounts/login/?next=/article/36/comment/ HTTP/1.1" 404 4328
+2024-06-12 17:45:59,711 WARNING django.request Not Found: /accounts/login/
+2024-06-12 17:45:59,712 WARNING django.server "GET /accounts/login/?next=/article/36/comment/ HTTP/1.1" 404 4328
+2024-06-12 17:48:00,321 WARNING django.request Not Found: /accounts/login/
+2024-06-12 17:48:00,321 WARNING django.server "GET /accounts/login/?next=/article/36/comment/ HTTP/1.1" 404 4328
+2024-06-12 17:48:01,368 WARNING django.request Not Found: /accounts/login/
+2024-06-12 17:48:01,369 WARNING django.server "GET /accounts/login/?next=/article/36/comment/ HTTP/1.1" 404 4328
+2024-06-12 17:48:06,690 WARNING django.request Not Found: /accounts/login/
+2024-06-12 17:48:06,690 WARNING django.server "GET /accounts/login/?next=/article/36/comment/ HTTP/1.1" 404 4328
+2024-06-12 17:48:22,289 WARNING django.request Not Found: /accounts/login/
+2024-06-12 17:48:22,290 WARNING django.server "GET /accounts/login/?next=/article/36/comment/ HTTP/1.1" 404 4328
+2024-06-12 17:48:24,862 WARNING django.request Not Found: /accounts/login/
+2024-06-12 17:48:24,863 WARNING django.server "GET /accounts/login/?next=/article/36/comment/ HTTP/1.1" 404 4328
+2024-06-12 17:48:58,268 INFO theblog.views User 1 updated post ID: 18
+2024-06-12 18:33:54,589 WARNING django.request Not Found: /favicon.ico
+2024-06-12 18:33:54,600 WARNING django.server "GET /favicon.ico HTTP/1.1" 404 4290
+2024-06-15 20:03:21,438 WARNING django.request Not Found: /favicon.ico
+2024-06-15 20:03:21,439 WARNING django.server "GET /favicon.ico HTTP/1.1" 404 4290

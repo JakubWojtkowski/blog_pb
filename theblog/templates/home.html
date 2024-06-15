@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--nav-->
+{% include 'navbar.html' %}
+
+<!--posts -->
+<div class="mt-5">
+    <h2 class="text-center">Articles</h2>
+</div>
+
+<div class="row row-cols-2 mt-4 mb-4 justify-content-center" id="posts">
+   {% for post in object_list %}
+    {% if not post.isPrivate or user == post.author %}
+      <div class="card m-2">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}
+              {% if post.isPrivate and user == post.author %}
+              <small>(private post)</small>
+            {% endif %}
+          </h5>
+          <p>Category: <a href="{% url 'category' post.category|slugify %}">{{ post.category }}</a></p>
+          <p class="card-text">{{ post.body|slice:":100"|safe }}</p>
+          <p class="card-text">Author: <small class="text-muted">{{ post.author }}</small></p>
+          <a href="{% url 'article-detail' post.pk %}">Read article</a>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+    </div>
+  {% endblock%}
+

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Edit Profile Page{% endblock %}
+{% block content %}
+
+{% include 'navbar.html' %}
+{% if user.is_authenticated %}
+    <h1>Edit Profile...</h1>
+    <div class="form-group">
+        <form method="POST" enctype="multipart/form-data">
+            {%  csrf_token %}
+            {{ form.as_p }}
+            <button  class="btn btn-secondary">Update Profile Page</button>
+        </form>
+    </div>
+
+        <script>
+            var name = "{{ user.id }}";
+            document.getElementById("elder").value = name;
+
+        </script>
+{% else %}
+Login to get acces
+
+{% endif %}
+
+
+{% endblock %}
